@@ -1,0 +1,25 @@
+*** Probes ***
+
++ FPing
+binary = /usr/sbin/fping
+
++ FPing6
+binary = /usr/sbin/fping
+protocol = 6
+
++ DNS
+binary = /usr/bin/dig
+lookup = google.com
+step = 300
+
++ TCPPing
+binary = /usr/bin/tcpping
+
++ FPingPlus
+binary = /usr/sbin/fping
+
++ FPingContinuousPlus
+binary = /usr/sbin/fping
+
++ TraceroutePingPlus
+binary = /usr/bin/traceroute

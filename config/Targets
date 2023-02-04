@@ -1,0 +1,38 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of WORKS Company. \
+         Here you will learn all about the latency of our network.
+
+
++ MainstreamSites
+menu = Mainstream Sites
+title = Mainstream Sites
+
+++ Baidu
+menu = Baidu
+title = Baidu
+
++++ BaiduICMP
+menu = Baidu ICMP
+title = 🇨🇳 Baidu ICMP
+probe = FPing
+host = www.baidu.com
+
++++ BaiduTCP80
+menu = Baidu TCP (port 80)
+title = 🇨🇳 Baidu TCP (port 80)
+probe = TCPPing
+host = www.baidu.com
+port = 80
+
++++ BaiduTCP443
+menu = Baidu TCP (port 443)
+title = 🇨🇳 Baidu TCP (port 443)
+probe = TraceroutePingPlus
+host = www.baidu.com
+port = 443
+mode = tcp

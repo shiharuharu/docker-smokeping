@@ -1,0 +1,65 @@
+*** Presentation ***
+
+template = /etc/smokeping/basepage.html
+charset  = utf-8
+
+# mod: set font style, support pango syntax, like "Noto Sans CJK SC, Bold 12px"
+defaultfont = Noto Sans Mono
+defaultfontsize = 8
+titlefontsize = 10
+
++ charts
+menu = Charts
+title = The most interesting destinations
+
+++ stddev
+sorter = StdDev(entries=>4)
+title = Top Standard Deviation
+menu = Std Deviation
+format = Standard Deviation %f
+
+++ max
+sorter = Max(entries=>5)
+title = Top Max Roundtrip Time
+menu = by Max
+format = Max Roundtrip Time %f seconds
+
+++ loss
+sorter = Loss(entries=>5)
+title = Top Packet Loss
+menu = Loss
+format = Packets Lost %f
+
+++ median
+sorter = Median(entries=>5)
+title = Top Median Roundtrip Time
+menu = by Median
+format = Median RTT %f seconds
+
++ overview
+
+width = 1000
+height = 200
+range = 12h
+strftime = %Y-%m-%d %H:%M:%S
+
++ detail
+
+width = 1000
+height = 200
+unison_tolerance = 2
+strftime = %Y-%m-%d %H:%M:%S
+
+"Last 3 Hours"    3h
+"Last 12 Hours"   12h
+"Last 1 Day"      1d
+"Last 7 Days"     7d
+"Last 30 Days"    30d
+"Last 60 Days"    60d
+
+#+ hierarchies
+#++ owner
+#title = Host Owner
+#++ location
+#title = Location
+
