@@ -21,12 +21,12 @@
 - iptype: `4`, `6`, default `4`.
 - interface: `eth0`, default not set.
 ## Build
-```
+```bash
 make dev
 ```
 
 ## Run
-```
+```bash
 mkdir -p /docker/smokeping/config
 mkdir -p /docker/smokeping/data
 
